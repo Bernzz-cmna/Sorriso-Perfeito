@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-  const whatsapp = document.querySelector(".whatsapp-fixo");
-
-  setInterval(() => {
-    whatsapp.classList.toggle("pulse");
-  }, 1400);
-
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+  });
 });
 
+document.querySelectorAll(".section, .hero-grid")
+  .forEach(el => observer.observe(el));
