@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <title>Sorriso Perfeito | Clínica Odontológica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<header>
+<header class="header">
   <div class="container header-flex">
     <h1>Sorriso Perfeito</h1>
-    <div class="header-actions">
-      <a href="#login" class="btn-header">Entrar</a>
-      <a href="#cadastro" class="btn-header">Cadastrar</a>
-    </div>
+    <a href="#cta" class="btn-header">Agendar Consulta</a>
   </div>
 </header>
 
 <section class="hero">
   <div class="container hero-grid reveal">
     <div class="hero-text">
-      <h2>Excelência, tecnologia e cuidado para o seu sorriso</h2>
-      <p>Tratamentos odontológicos modernos, seguros e com resultados reais.</p>
+      <h2>Seu sorriso tratado com excelência, tecnologia e cuidado</h2>
+      <p>Tratamentos odontológicos modernos com conforto, segurança e alto padrão.</p>
       <a href="https://wa.me/5545991002660" class="btn-primary">Falar no WhatsApp</a>
     </div>
+
     <div class="hero-img">
       <img src="doutortrabalhando.png" alt="Dentista trabalhando">
     </div>
@@ -34,19 +33,28 @@
 
 <section class="section reveal">
   <h3>Por que escolher a Sorriso Perfeito?</h3>
+
   <div class="cards">
     <div class="card">
-      <img src="cadeiraodontologica.png">
+      <div class="img-box">
+        <img src="cadeiraodontologica.png" alt="Cadeira odontológica">
+      </div>
       <h4>Tecnologia Avançada</h4>
       <p>Equipamentos modernos e diagnósticos precisos.</p>
     </div>
+
     <div class="card">
-      <img src="recepcao.png">
+      <div class="img-box">
+        <img src="recepcao.png" alt="Recepção da clínica">
+      </div>
       <h4>Conforto Total</h4>
-      <p>Ambiente planejado para seu bem-estar.</p>
+      <p>Ambiente planejado para tranquilidade e bem-estar.</p>
     </div>
+
     <div class="card">
-      <img src="mulhersorrindo.png">
+      <div class="img-box">
+        <img src="mulhersorrindo.png" alt="Paciente sorrindo">
+      </div>
       <h4>Resultados Reais</h4>
       <p>Sorrisos naturais que elevam sua autoestima.</p>
     </div>
@@ -54,40 +62,27 @@
 </section>
 
 <section class="section destaque reveal">
-  <div class="container autoridade">
+  <div class="autoridade">
     <div>
       <h3>Equipe Especializada</h3>
-      <p>Profissionais experientes e comprometidos com excelência.</p>
+      <p>Profissionais experientes, atualizados e comprometidos com excelência clínica.</p>
     </div>
-    <img src="equipeodontologica.png" alt="Equipe odontológica">
+
+    <div class="img-box grande">
+      <img src="equipeodontologica.png" alt="Equipe odontológica">
+    </div>
   </div>
 </section>
 
-<!-- ================= LOGIN ================= -->
-<section id="login" class="section reveal auth">
-  <h3>Área do Paciente</h3>
-  <form class="auth-box">
-    <input type="email" placeholder="E-mail" required>
-    <input type="password" placeholder="Senha" required>
-    <button type="submit">Entrar</button>
-  </form>
+<section class="section reveal">
+  <h3>Onde Estamos</h3>
+  <iframe src="https://www.google.com/maps?q=Curitiba&output=embed" loading="lazy"></iframe>
 </section>
 
-<!-- ================= CADASTRO ================= -->
-<section id="cadastro" class="section reveal auth">
-  <h3>Criar Conta</h3>
-  <form class="auth-box">
-    <input type="text" placeholder="Nome completo" required>
-    <input type="email" placeholder="E-mail" required>
-    <input type="password" placeholder="Senha" required>
-    <button type="submit">Cadastrar</button>
-  </form>
-</section>
-
-<section class="cta reveal">
+<section id="cta" class="cta reveal">
   <h3>Agende sua consulta agora</h3>
   <p>Atendimento rápido e personalizado</p>
-  <a href="https://wa.me/5545991002660" class="btn-primary big-cta">
+  <a href="https://wa.me/5545991002660" class="btn-whatsapp-big">
     <i class="fab fa-whatsapp"></i> WhatsApp 45 99100-2660
   </a>
 </section>
@@ -96,7 +91,7 @@
   <p>© 2026 Sorriso Perfeito • Todos os direitos reservados</p>
 </footer>
 
-<a class="whatsapp-fixo" href="https://wa.me/5545991002660">
+<a href="https://wa.me/5545991002660" class="whatsapp-fixo">
   <i class="fab fa-whatsapp"></i>
 </a>
 
