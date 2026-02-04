@@ -1,196 +1,194 @@
-/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* CONFIGURAÇÕES GERAIS */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
 }
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #0a5cff, #003fbf);
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-header {
+  background: #0a5cff;
   color: white;
-  text-align: center;
-  padding: 25px 15px;
-}
-
-header h1 {
-  font-size: 32px;
-}
-
-header p {
-  font-size: 16px;
-  opacity: 0.9;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: center;
-  gap: 30px;
-  margin-top: 40px;
 }
 
-.hero-text {
-  flex: 1;
+.hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
-.hero-text h1 {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.hero-text p {
+.hero-content p {
   font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.hero-image {
-  flex: 1;
+  margin-bottom: 30px;
 }
 
 .hero-image img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 14px;
 }
 
-/* BOTÃO CTA */
-.cta {
-  display: inline-block;
-  background-color: #0a5cff;
+/* BOTÕES */
+.btn-primary {
+  background: #0a5cff;
   color: white;
   padding: 15px 28px;
-  border-radius: 6px;
-  font-size: 18px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
-}
-
-.cta:hover {
-  background-color: #003fbf;
-  transform: scale(1.03);
+  font-size: 18px;
 }
 
 /* SECTIONS */
-section {
-  background-color: white;
-  padding: 45px 25px;
-  margin-top: 50px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
-section h2 {
+.section h3 {
+  font-size: 32px;
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-/* CARDS */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+.dark {
+  background: #0a5cff;
+  color: white;
 }
 
-.card {
-  flex: 1;
-  min-width: 250px;
-  background-color: #f0f4ff;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: center;
-  transition: 0.3s;
+.light {
+  background: #ffffff;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
 }
 
-/* AVALIAÇÕES */
-.card strong {
-  display: block;
-  margin-top: 10px;
-}
-
-/* EQUIPE */
-.team img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 4px solid #0a5cff;
-}
-
-.team h3 {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-/* MAPA */
-.map iframe {
+.card img {
   width: 100%;
-  height: 350px;
-  border: none;
   border-radius: 12px;
+  margin-bottom: 15px;
 }
 
-/* FOOTER */
-footer {
-  background-color: #0a5cff;
+/* AUTORIDADE */
+.authority {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.authority img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* TEAM */
+.team {
+  text-align: center;
+}
+
+.team img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+/* REVIEWS */
+.review {
+  background: #f0f4ff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  lombok-radius: 12px;
+}
+
+/* CTA FINAL */
+.cta-final {
+  background: #0a5cff;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+  padding: 80px 20px;
 }
 
-/* WHATSAPP FIXO */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a5cff;
+  color: white;
+}
+
+/* WHATSAPP */
 .whatsapp-fixo {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background: #25d366;
   color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  font-size: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  z-index: 999;
-  transition: 0.3s;
-}
-
-.whatsapp-fixo:hover {
-  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,.3);
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+@media (max-width: 900px) {
+  .hero,
+  .authority {
+    grid-template-columns: 1fr;
   }
 
-  .hero-text h1 {
-    font-size: 30px;
-  }
-
-  section h2 {
-    font-size: 24px;
+  .hero-content h2 {
+    font-size: 32px;
   }
 }
